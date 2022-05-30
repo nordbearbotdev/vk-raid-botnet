@@ -1,5 +1,12 @@
 # vk-raid-botnet
 
+Токен аккаунты получить можно тут:
+`https://vkhost.github.io/`
+
+'Настройки' > даете все разрешения > Скопируйте часть адресной строки от access_token= до &expires_in 
+
+Если не понятно пишите в чат/комментарии канала: https://t.me/Pepe_devs или https://vk.com/club213469514
+
 # Установка
 
 `git clone https://github.com/Madara225/vk-raid-botnet`
