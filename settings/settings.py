@@ -6,18 +6,19 @@ class MenuSettings:
 	def __init__(self):
 
 		self.menu_botnet = []
-		for file in os.listdir('functions'):
-			if file.endswith(".py"):
 
-				name = file[:-3]
-				path = 'functions'
-				function = importlib.import_module(f'{path}.{name}')
+		files = sorted([file for file in os.listdir('functions')if file.endswith(".py")])
 
-				for classname, classobj in inspect.getmembers(function, inspect.isclass):
-					all_classes = classobj.__module__
+		for file in files:
+			name = file[:-3]
+			path = 'functions'
+			function = importlib.import_module(f'{path}.{name}')
 
-					if all_classes[:9] == path and classobj.__doc__ != None:
-						if classobj in self.menu_botnet:
-							continue
-						else:
-							self.menu_botnet.append(classobj)
+			for classname, classobj in inspect.getmembers(function, inspect.isclass):
+				all_classes = classobj.__module__
+
+				if all_classes[:9] == path and classobj.__doc__ != None:
+					if classobj in self.menu_botnet:
+						continue
+					else:
+						self.menu_botnet.append(classobj)

@@ -9,8 +9,12 @@ console = Console()
 session_list = SessionsRead()
 list_function = MenuSettings()
 
-console.print("Author's channel: https://t.me/Pepe_devs and https://t.me/huis_bn\n")
-print('test version')
+console.print('''[bold]
+GitHub: https://github.com/Madara225/vk-raid-botnet
+Author's channel: https://t.me/Pepe_devs and https://t.me/huis_bn
+test version
+''')
+
 
 def botnet_main():
 

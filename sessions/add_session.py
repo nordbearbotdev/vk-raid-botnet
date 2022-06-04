@@ -39,10 +39,11 @@ elif menu_sessions_settings == '2':
             console.print(f'[bold red]ERROR[/]: {error}')
             error_session.append(session_name)
 
-    deleted = Confirm.ask(f'''
+    if error_session:
+        deleted = Confirm.ask(f'''
 blocking: {len(error_session)}
 delete blocked accounts?''')
-    if deleted:
-        for bad_session in error_session:
-            os.remove(bad_session)
-            console.print(f'[bold red][-]{bad_session}')
+        if deleted:
+            for bad_session in error_session:
+                os.remove(bad_session)
+                console.print(f'[bold red][-]{bad_session}')

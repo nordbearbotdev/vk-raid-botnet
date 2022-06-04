@@ -26,9 +26,12 @@ class Flood(FunctionSettings):
         #позже исправлю
         @self.session.on.message(text=trigger)
         async def flood_text(message: Message):
+
             user = await self.session.api.users.get()
+
             count = 0
             count_error = 0
+
             for _ in range(count_range):
                 try:
                     await message.answer(random.choice(text))
