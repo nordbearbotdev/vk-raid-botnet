@@ -17,7 +17,7 @@ class JoinChat(FunctionSettings):
         self.delay = Prompt.ask('[bold red]delay[/]', default='0')
 
         for session in track(sessions,
-        '[bold white]CHANGE[/]'):
+        '[bold white]JOIN[/]'):
             self.joined(session)
 
     def joined(self, session):
