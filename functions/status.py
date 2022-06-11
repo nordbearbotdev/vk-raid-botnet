@@ -24,4 +24,4 @@ class StatusAccount:
                 console.print(f'[bold red][-][/]{error}')
                 error_count += 1
 
-        console.print(f'[bold]block: {count} normal: {error_count}[/]')
+        console.print(f'[bold]block: {error_count} normal: {count}[/]')
