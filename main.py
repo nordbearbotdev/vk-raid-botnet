@@ -33,8 +33,9 @@ banner = r'''
 ⠄⠄⠄⠄⠄⠄⠻⣿⣿⣿⡟⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
 
 GitHub: https://github.com/Madara225/vk-raid-botnet
-Author's channel: https://t.me/Pepe_devs and https://t.me/huis_bn
+Authors' channel: https://t.me/Pepe_devs and https://t.me/huis_bn
 
+Author's channel of fork: https://t.me/CrimsonBots
 '''
 
 System.Clear()
