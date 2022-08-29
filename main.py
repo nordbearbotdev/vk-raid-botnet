@@ -18,11 +18,11 @@ banner = r'''
 
 ⠄⠄⠄⠄⠄⠄⢴⣿⣿⣿⣷⣤⣤⣄⡀⢠⣤⣄⣀⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
 ⠄⠄⠄⠄⠄⠄⠄⠙⢿⣿⣟⣉⣠⣤⣤⣤⣉⡻⢿⣇⣠⣤⣤⠄⠄⠄⠄⠄⠄⠄
-⠄⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⠟⢋⣁⣄⡈⠻⣿⢃⣴⠷⠄⠄⠄⠄⠄
+⠄⠄⠄⠄⠄⠄⠄⠄⠄⠹⣿⣿⣿⣿⣿⠟⢋⣁⣄⡈⠻⣿⢃⣴⠷⠄⠄⠄⠄⠄ 
 ⠄⠄⠄⠄⠄⠄⠄⢀⡴⠶⢾⣿⣿⣿⣿⣿⠟⣩⣭⣭⣄⡀⠛⢡⣾⡏⠉⠄⠄⠄
-⠄⠄⠄⠄⠄⠄⢸⡏⠄⠄⠢⠘⣿⣿⣿⠘⣿⣿⡿⠁⠙⣿⡄⢸⣿⡇⢰⡷⠄⠄
-⠄⠄⠄⠄⠄⢀⣼⣧⠄⠄⠄⢰⣿⣿⠋⣷⢸⣿⠇⢰⠆⣿⡇⠈⢿⡿⠆⠄⣠⡄
-⠄⠄⣀⣴⣾⣿⣿⣿⣆⠄⠄⣾⣿⣿⣇⢿⡌⠻⣤⣤⠶⠟⣁⠐⡖⠒⠂⢉⣩⣀
+⠄⠄⠄⠄⠄⠄⢸⡏⠄⠄⠢⠘⣿⣿⣿⠘⣿⣿⡿⠁⠙⣿⡄⢸⣿⡇⢰⡷⠄⠄   Rofl-fork by Commit 404
+⠄⠄⠄⠄⠄⢀⣼⣧⠄⠄⠄⢰⣿⣿⠋⣷⢸⣿⠇⢰⠆⣿⡇⠈⢿⡿⠆⠄⣠⡄   
+⠄⠄⣀⣴⣾⣿⣿⣿⣆⠄⠄⣾⣿⣿⣇⢿⡌⠻⣤⣤⠶⠟⣁⠐⡖⠒⠂⢉⣩⣀   
 ⠄⣼⣿⣿⡿⠛⣥⣤⣤⡄⠄⠘⠋⠛⠿⡌⠛⠳⠶⠆⣠⣴⣿⣷⡘⢋⣽⣿⡿⠟
 ⣼⣿⣿⣿⡇⢸⣇⡈⠟⢠⣄⣰⢏⡠⠄⠰⢶⣶⣶⣾⣿⣿⣿⣿⠿⠿⣟⣡⠴⠄
 ⢿⣿⣿⣿⣧⠈⣿⣷⠄⢸⣿⣿⣯⣠⠞⣠⣈⠻⠿⠿⢿⣛⣉⠤⠶⠛⣫⡀⠄⠄
@@ -34,26 +34,24 @@ banner = r'''
 
 GitHub: https://github.com/Madara225/vk-raid-botnet
 Author's channel: https://t.me/Pepe_devs and https://t.me/huis_bn
-test version
 
 '''
 
 System.Clear()
 print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(banner)))  
-SlowPrint(f"\n 
 
 def botnet_main():
 
     menu_function={}
 
-    print(f'[bold white]botnet accounts >> {len(session_list.sessions)}')
+    print(f'botnet accounts >> {len(session_list.sessions)}')
     for num_function, function in enumerate(
             list_function.menu_botnet,
             start=1
         ):
 
         menu_function[num_function]=function
-        print(f'[bold white][{num_function}] {function.__doc__}')
+        print(f'[{num_function}] {function.__doc__}')
 
     try:
         menu = int(console.input('>> '))
