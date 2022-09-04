@@ -29,9 +29,13 @@
 
 # Конфиг
 
-`cd settings`
+```bash
+cd settings
+```
 
-`nano config.py`
+```bash
+nano config.py
+```
 
 # Запуск
 
