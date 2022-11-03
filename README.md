@@ -30,11 +30,11 @@ python3 add_account.py
 2 - проверяет аккаунты
 
 # Конфиг
-
+Переходим в папку "setings"
 ```bash
 cd settings
 ```
-
+Запускаем файл config.py
 ```bash
 nano config.py
 ```
